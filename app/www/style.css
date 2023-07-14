@@ -1,0 +1,209 @@
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  color: #333;
+}
+
+h3 {
+  font-size: 30px;
+  color: #333;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #555;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+a {
+  color: #2e6da4;
+}
+
+a:hover {
+  color: #1d4f7c;
+}
+
+.project {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#home {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+#about-me {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#portfolio {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+#contact {
+  background-color: #fff;
+  padding:
+  
+}
+
+
+
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  color: #333;
+}
+
+h3 {
+  font-size: 30px;
+  color: #333;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #555;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+a {
+  color: #2e6da4;
+}
+
+a:hover {
+  color: #1d4f7c;
+}
+
+.project {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#home {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+#about-me {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#portfolio {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+#contact {
+  background-color: #fff;
+  padding:
+
+
+
+
+
+tags$style(HTML("
+  .animated-gradient {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    -moz-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+  }
+
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @-moz-keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+"))
+
+
+
+
+
+
+
+tags$style(HTML("
+  .parallax {
+    background-image: url('www/my_background_image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+  }
+
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+  }
+"))
+
