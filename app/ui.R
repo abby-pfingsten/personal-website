@@ -402,7 +402,7 @@ ui <- dashboardPage(
             ),
             column(
               9,
-              plotlyOutput("map", height = "530px") %>%
+              leafletOutput("map", height = "530px") %>%
                 withSpinner(color = "#8e7cc3")
             )
           ),

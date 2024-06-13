@@ -5,35 +5,45 @@ library(ggmap)
 library(slickR)
 library(httr)
 library(jsonlite)
+library(tidygeocoder)
+library(leaflet)
+library(readxl)
 
 # api key <- AIzaSyCUIMpEwalISnYcJPr96SBnntSxh9kXqns
 # Define server logic
 server <- function(session, input, output) {
-  register_google(google_api_key)
+  # register_google(google_api_key)
 
 
   # Map Setup ----
 
   # use google API to get the coordinates of the cities
-  cities_visited_coord <- data.frame(lat = numeric(), lon = numeric())
-  cities <- cities_visited$city
+  # cities_visited_coord <- data.frame(lat = numeric(), lon = numeric())
+  # cities <- cities_visited$city
   
-  for (i in 1:length(cities)) {
-    cities_visited_coord[i, ] <- geocode_city(cities[i], google_api_key)
-  }
-
-  # add them to my dataset
-  cities_visited[, `lat` := cities_visited_coord$lat]
-  cities_visited[, `lon` := cities_visited_coord$lon]
-
-  # get the center of the lats/lons
-  lat_range <- range(cities_visited_coord$lat)
-  lon_range <- range(cities_visited_coord$lon)
-
-  center_lat <- (lat_range[1] + lat_range[2]) / 2
-  center_lon <- (lon_range[1] + lon_range[2]) / 2
+  # grab the geocoded cities from `tidygeocoder` so 
+  # as to prevent lag
+  geocoded_cities <- read_excel("geocoded_cities.xlsx")
   
-  cities_visited[, `year` := ifelse(is.na(year), "NA", year)]
+  geocoded_cities <- cities_visited %>%
+    geocode(city, method = "osm", full_results = TRUE)
+  
+  # for (i in 1:length(cities)) {
+  #   cities_visited_coord[i, ] <- geocode_city(cities[i], google_api_key)
+  # }
+  # 
+  # # add them to my dataset
+  # cities_visited[, `lat` := cities_visited_coord$lat]
+  # cities_visited[, `lon` := cities_visited_coord$lon]
+  # 
+  # # get the center of the lats/lons
+  # lat_range <- range(cities_visited_coord$lat)
+  # lon_range <- range(cities_visited_coord$lon)
+  # 
+  # center_lat <- (lat_range[1] + lat_range[2]) / 2
+  # center_lon <- (lon_range[1] + lon_range[2]) / 2
+  # 
+  # cities_visited[, `year` := ifelse(is.na(year), "NA", year)]
 
 
   ## Filters ----
@@ -61,50 +71,56 @@ server <- function(session, input, output) {
         )
 
       ## Map Output ----
-      output$map <- renderPlotly({
-        map <- plot_ly(
-          cities_visited,
-          type = "scattermapbox",
-          mode = "markers",
-          lat = ~lat,
-          lon = ~lon,
-          text = ~city,
-          color = ~ factor(year),
-          hovertemplate = paste0(
-            "City:\t<b>",
-            cities_visited$city,
-            "</b><br>",
-            "Home:\t<b>",
-            ifelse(cities_visited$home %in% "TRUE", "Yes", "No"),
-            "</b><br>",
-            "Year First Visited:\t<b>",
-            cities_visited$year,
-            "</b><br>",
-            "Times Visited (Since 2020):\t<b>",
-            ifelse(is.na(cities_visited$times & cities_visited$home == TRUE), "NA", 
-                   ifelse(is.na(cities_visited$times & cities_visited$home == FALSE), 1, 
-                          cities_visited$times)
-                   ),
-            "</b><br>"
-          ),
-          
-          marker = list(
-            size = 15
-          )
-        ) %>%
-          layout(
-            mapbox = list(
-              style = "carto-positron",
-              zoom = 1,
-              center = list(
-                lat = center_lat,
-                lon = center_lon
-              )
-            )
-          )
-
-        map
+      
+      output$map <- renderLeaflet({
+        leaflet(geocoded_cities) %>%
+          addTiles() %>% # Use OpenStreetMap tiles
+          addMarkers(~long, ~lat, popup = ~city)
       })
+      # output$map <- renderPlotly({
+      #   map <- plot_ly(
+      #     cities_visited,
+      #     type = "scattermapbox",
+      #     mode = "markers",
+      #     lat = ~lat,
+      #     lon = ~lon,
+      #     text = ~city,
+      #     color = ~ factor(year),
+      #     hovertemplate = paste0(
+      #       "City:\t<b>",
+      #       cities_visited$city,
+      #       "</b><br>",
+      #       "Home:\t<b>",
+      #       ifelse(cities_visited$home %in% "TRUE", "Yes", "No"),
+      #       "</b><br>",
+      #       "Year First Visited:\t<b>",
+      #       cities_visited$year,
+      #       "</b><br>",
+      #       "Times Visited (Since 2020):\t<b>",
+      #       ifelse(is.na(cities_visited$times & cities_visited$home == TRUE), "NA", 
+      #              ifelse(is.na(cities_visited$times & cities_visited$home == FALSE), 1, 
+      #                     cities_visited$times)
+      #              ),
+      #       "</b><br>"
+      #     ),
+      #     
+      #     marker = list(
+      #       size = 15
+      #     )
+      #   ) %>%
+      #     layout(
+      #       mapbox = list(
+      #         style = "carto-positron",
+      #         zoom = 1,
+      #         center = list(
+      #           lat = center_lat,
+      #           lon = center_lon
+      #         )
+      #       )
+      #     )
+      # 
+      #   map
+      # })
     }
   )
 
