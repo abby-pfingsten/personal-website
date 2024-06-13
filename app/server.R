@@ -25,8 +25,9 @@ server <- function(session, input, output) {
   # as to prevent lag
   geocoded_cities <- read_excel("geocoded_cities.xlsx")
   
-  geocoded_cities <- cities_visited %>%
-    geocode(city, method = "osm", full_results = TRUE)
+  # use the code below if new cities are added
+  # geocoded_cities <- cities_visited %>%
+  #   geocode(city, method = "osm", full_results = TRUE)
   
   # for (i in 1:length(cities)) {
   #   cities_visited_coord[i, ] <- geocode_city(cities[i], google_api_key)

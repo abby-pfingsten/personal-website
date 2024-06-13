@@ -5,6 +5,7 @@ library(plotly)
 library(slickR)
 library(shinycssloaders)
 library(DT)
+library(leaflet)
 
 
 ui <- dashboardPage(
