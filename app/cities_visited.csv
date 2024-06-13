@@ -1,10 +1,17 @@
 city,year,multiple,times,home,city_for_this_year
+"Quito, Ecuador",2005,TRUE,5,TRUE,FALSE
+"Pittsburgh, Pennsylvania",2016,TRUE,,TRUE,FALSE
+"Frederick, Maryland",2017,TRUE,,TRUE,FALSE
 "Manuel Antonio, Costa Rica",2020,FALSE,,FALSE,FALSE
 "Valladolid, Mexico",2020,TRUE,2,FALSE,FALSE
 "Cancun, Mexico",2020,TRUE,2,FALSE,FALSE
+"Detroit, Michigan",2020,TRUE,8,FALSE,FALSE
+"Washington, DC",2020,TRUE,4,FALSE,FALSE
 "Picton, Ontario",2021,FALSE,,FALSE,FALSE
 "San Francisco, California",2021,TRUE,2,FALSE,FALSE
 "New York City, New York",2021,TRUE,6,FALSE,FALSE
+"Cozumel, Mexico",2021,TRUE,2,FALSE,FALSE
+"Greenville, South Carolina",2021,TRUE,2,FALSE,FALSE
 "Aguadilla, Puerto Rico",2022,FALSE,,FALSE,FALSE
 "Florence, Italy",2022,FALSE,,FALSE,FALSE
 "Rome, Italy",2022,FALSE,,FALSE,FALSE
@@ -12,28 +19,30 @@ city,year,multiple,times,home,city_for_this_year
 "Paris, France",2022,FALSE,,FALSE,FALSE
 "Amsterdam, Netherlands",2022,FALSE,,FALSE,FALSE
 "Venice, Italy",2022,FALSE,,FALSE,FALSE
-"Detroit, Michigan",2020,TRUE,8,FALSE,FALSE
 "Denver, Colorado",2022,FALSE,,FALSE,FALSE
+Rocky Mountain National Park,2022,FALSE,,FALSE,FALSE
 "Richmond, Virginia",2023,FALSE,,FALSE,FALSE
-"Quito, Ecuador",2005,TRUE,5,TRUE,FALSE
 "Miami, Florida",2023,FALSE,,FALSE,FALSE
 "Las Vegas, Nevada",2023,TRUE,2,FALSE,FALSE
 Zion National Park,2023,FALSE,,FALSE,FALSE
 "Hurricane, Utah",2023,FALSE,,FALSE,FALSE
-"Tampa, Florida",NA,TRUE,,TRUE,FALSE
 "Dubrovnik, Croatia",2023,FALSE,,FALSE,FALSE
 "Neum, Bosnia",2023,FALSE,,FALSE,FALSE
 "Brussels, Belgium",2023,FALSE,,FALSE,FALSE
-"Seattle, Washington",2023,FALSE,,FALSE,TRUE
-Yosemetie National Park,2023,FALSE,,FALSE,TRUE
-"Munich, Germany",2023,FALSE,,FALSE,TRUE
-"Vienna, Austria",2023,FALSE,,FALSE,TRUE
-"Cozumel, Mexico",2021,TRUE,2,FALSE,FALSE
-"Frederick, Maryland",2017,TRUE,,TRUE,FALSE
-"Washington, DC",2020,TRUE,4,FALSE,FALSE
+"Seattle, Washington",2023,FALSE,,FALSE,FALSE
+Yosemetie National Park,2023,FALSE,,FALSE,FALSE
+"Munich, Germany",2023,FALSE,,FALSE,FALSE
+"Vienna, Austria",2023,FALSE,,FALSE,FALSE
 "Santa Cruz Island, Ecuador",2023,FALSE,,FALSE,FALSE
-"New Orleans, Louisiana ",2023,FALSE,,FALSE,TRUE
-"Columbus, Ohio",2023,FALSE,,FALSE,TRUE
-"Greenville, South Carolina",2021,TRUE,2,FALSE,FALSE
-"Pittsburgh, Pennsylvania",2016,TRUE,,TRUE,FALSE
-Rocky Mountain National Park,2022,FALSE,,FALSE,FALSE
+"New Orleans, Louisiana",2023,FALSE,,FALSE,FALSE
+"Columbus, Ohio",2023,FALSE,,FALSE,FALSE
+"Tampa, Florida",NA,TRUE,,TRUE,FALSE
+"San Diego, California",2024,FALSE,,FALSE,FALSE
+"New Orleans, Louisiana",2024,TRUE,2,FALSE,FALSE
+"New York City, New York",2024,TRUE,7,FALSE,FALSE
+"Lisbon, Portugal",2024,FALSE,,FALSE,FALSE
+"Porto, Portugal",2024,FALSE,,FALSE,FALSE
+"Naples, Italy",2024,FALSE,,FALSE,TRUE
+"Catania, Italy",2024,FALSE,,FALSE,TRUE
+"Palermo, Italy",2024,FALSE,,FALSE,TRUE
+"The Finger Lakes, New York",2024,FALSE,,FALSE,TRUE
