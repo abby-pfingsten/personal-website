@@ -136,16 +136,6 @@ ui <- dashboardPage(
                   width = "100%",
                   height = "20%"
                 ),
-                ### API ----
-                box(
-                  h5("API Development - ", span("In Progress", style = "font-style: italic")),
-                  h6("I'm currently in the process of being onboarded and working with our API development team.
-                   My role will involve leveraging GraphQL and utilizing IntelliJ as my development environment, 
-                   primarily coding in Java. Given that our applications heavily rely on APIs, I am enthusiastic 
-                   about contributing to the ongoing efforts of debugging, editing, and maintaining these crucial components.",
-                     style = "color: #8e7cc3"),
-                  width = "100%"
-                ),
                 ### Sherlock ----
                 box(
                   h5("R Shiny Application"),
@@ -301,6 +291,48 @@ ui <- dashboardPage(
         fluidPage(
           h1("Education", style = "text-align: center;"),
           br(),
+          fluidRow(
+            column(
+              2,
+              tags$img(src = "open-classrooms.png", width = "150px")
+              ),
+              column(
+                10,
+                h3("OpenClassrooms - Web Development Certification | Aug 2023 - June 2024"),
+                tags$hr(style = "border-top: 4px solid #ccc;"),
+                tags$p("In the fall of 2023, I began a Web Development Certification through OpenClassrooms - it
+                       was a project based certification, wherein after each set of courses, you built an application
+                       adhering to the requirements or themes of the module. I learned about HTML, CSS/SCSS, 
+                       making applications mobile and tablet compatible, SEO practices, Javascript, building 
+                       and testing API's, Node.js, and for the final project, built a full-stack React application."),
+                tags$p("Please feel free to checkout my GitHub for some of the projects I completed during the course:"),
+                div(
+                  class = "disclaimers",
+                tags$a("Groupomania Full Stack React App", href = "https://github.com/abby-pfingsten/groupomania-react-app"),
+                tags$p("A message board app that allows you to create an account, sign in, make a multi-media post (accepts images,
+                       audio or video), and view all posts made by other users."),
+                tags$p("This app can only be cloned and ran if you have a MySQL server account as it relies on two backend tables 
+                       for capturing user information.")
+                ),
+                div(
+                  class = "disclaimers",
+                  tags$a("Piquantee App", href = "https://github.com/abby-pfingsten/piiquante-app"),
+                  tags$p("An app that allows you to create an account, and add different hot sauces. You can view other users
+                         hot sauces, and rate them. You can also delete a hot sauce that you have uploaded. All of these functionalities
+                         are accomplished via API's that I built."),
+                  tags$p("Only the backend code was written by me (i.e. only files in the backend/ folder).")
+                ),
+                div(
+                  class = "disclaimers",
+                  tags$a("E-Commerce App", href = "https://github.com/abby-pfingsten/kanap-ecommerce-app"),
+                  tags$p("An  app that queries an API for items, and allows you to have a 'shopping experience' (i.e. you can 
+                         add, delete, modify items in your cart and 'checkout')."),
+                  tags$p("Only the backend code was written by me (i.e. only files in the backend/ folder).")
+                ),
+                br(),
+                br()
+            )
+          ),
           fluidRow(
             column(
               2,

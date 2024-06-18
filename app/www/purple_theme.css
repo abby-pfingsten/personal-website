@@ -147,6 +147,17 @@ body {
   background-color: #CDB4DB;
 }
 
+.disclaimers {
+  display: flex;
+  flex-direction: column;
+}
 
+.disclaimers a {
+  color: #8e7cc3;
+}
+
+.disclaimers p {
+  font-size: 11px;
+}
 
 
