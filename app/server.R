@@ -8,7 +8,6 @@ library(tidygeocoder)
 library(leaflet)
 library(readxl)
 
-# api key <- AIzaSyCUIMpEwalISnYcJPr96SBnntSxh9kXqns
 # Define server logic
 server <- function(session, input, output) {
 
