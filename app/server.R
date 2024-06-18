@@ -40,7 +40,7 @@ server <- function(session, input, output) {
       input$future
     ),
     {
-      cities_visited <- cities_visited %>%
+      cities_visited <- geocoded_cities %>%
         filter(
           year %in% input$year,
           home %in% input$home,
@@ -51,7 +51,7 @@ server <- function(session, input, output) {
       ## Map Output ----
       
       output$map <- renderLeaflet({
-        leaflet(geocoded_cities) %>%
+        leaflet(cities_visited) %>%
           addTiles() %>% # Use OpenStreetMap tiles
           addMarkers(~long, ~lat, popup = ~city)
       })
