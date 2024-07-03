@@ -80,7 +80,7 @@ ui <- dashboardPage(
                 style = "font-size: 60px; margin-left: 100px",
                 icon("linkedin", lib = "font-awesome"),
                 tags$a(
-                  href = "resume.pdf",
+                  href = "abigale-pfingsten-resume.pdf",
                   target = "_blank",
                   style = "font-size: 50px; margin-left: 150px;",
                   icon("user", lib = "font-awesome")

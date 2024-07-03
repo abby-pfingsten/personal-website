@@ -1,6 +1,5 @@
 library(shiny)
 library(plotly)
-library(ggmap)
 library(data.table)
 library(dplyr)
 
