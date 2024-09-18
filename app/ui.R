@@ -423,9 +423,8 @@ ui <- dashboardPage(
             column(
               3,
               init_picker_input("year", "Year"),
-              init_picker_input("home", "Home?"),
+              init_picker_input("home", "Considered Home?"),
               init_picker_input("multiple", "Multiple Visits"),
-              init_picker_input("future", "Future 2024 Trip"),
               tags$p("Traveling has been embedded in my DNA. My first international flight
           was when I was five, when we flew to Ecuador to live with my mom's family for a year.
           My mom also studied abroad in Israel and France, and when I was growing up,

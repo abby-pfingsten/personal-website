@@ -1,48 +1,48 @@
 city_state,city,state,year,multiple,times,home,city_for_this_year
-"Quito, Ecuador",Quito,,2005,TRUE,5,TRUE,FALSE
-"Pittsburgh, Pennsylvania",Pittsburgh,,2016,TRUE,,TRUE,FALSE
-"Frederick, Maryland",Frederick,,2017,TRUE,,TRUE,FALSE
-"Manuel Antonio, Costa Rica",Manuel Antonio,,2020,FALSE,,FALSE,FALSE
-"Valladolid, Mexico",Valladolid,,2020,TRUE,2,FALSE,FALSE
-"Cancun, Mexico",Cancun,,2020,TRUE,2,FALSE,FALSE
-"Detroit, Michigan",Detroit,,2020,TRUE,8,FALSE,FALSE
-"DC, Washington",DC,,2020,TRUE,4,FALSE,FALSE
-"Picton, Ontario",Picton,,2021,FALSE,,FALSE,FALSE
-"San Francisco, California",San Francisco,,2021,TRUE,2,FALSE,FALSE
-"New York City, New York",New York City,,2021,TRUE,6,FALSE,FALSE
-"Cozumel, Mexico",Cozumel,,2021,TRUE,2,FALSE,FALSE
-"Greenville, South Carolina",Greenville,,2021,TRUE,2,FALSE,FALSE
-"Aguadilla, Puerto Rico",Aguadilla,,2022,FALSE,,FALSE,FALSE
-"Florence, Italy",Florence,,2022,FALSE,,FALSE,FALSE
-"Rome, Italy",Rome,,2022,FALSE,,FALSE,FALSE
-"Tivoli, Italy",Tivoli,,2022,FALSE,,FALSE,FALSE
-"Paris, France",Paris,,2022,FALSE,,FALSE,FALSE
-"Amsterdam, Netherlands",Amsterdam,,2022,FALSE,,FALSE,FALSE
-"Venice, Italy",Venice,,2022,FALSE,,FALSE,FALSE
-"Denver, Colorado",Denver,,2022,FALSE,,FALSE,FALSE
-"Rocky Mountain National Park, Colorado",Rocky Mountain National Park,,2022,FALSE,,FALSE,FALSE
-"Richmond, Virginia",Richmond,,2023,FALSE,,FALSE,FALSE
-"Miami, Florida",Miami,,2023,FALSE,,FALSE,FALSE
-"Las Vegas, Nevada",Las Vegas,,2023,TRUE,2,FALSE,FALSE
-"Zion National Park, Utah",Zion National Park,,2023,FALSE,,FALSE,FALSE
-"Hurricane, Utah",Hurricane,,2023,FALSE,,FALSE,FALSE
-"Dubrovnik, Croatia",Dubrovnik,,2023,FALSE,,FALSE,FALSE
-"Neum, Bosnia",Neum,,2023,FALSE,,FALSE,FALSE
-"Brussels, Belgium",Brussels,,2023,FALSE,,FALSE,FALSE
-"Seattle, Washington",Seattle,,2023,FALSE,,FALSE,FALSE
-"Yosemetie National Park, Colorado",Yosemetie National Park,,2023,FALSE,,FALSE,FALSE
-"Munich, Germany",Munich,,2023,FALSE,,FALSE,FALSE
-"Vienna, Austria",Vienna,,2023,FALSE,,FALSE,FALSE
-"Santa Cruz Island, Ecuador",Santa Cruz Island,,2023,FALSE,,FALSE,FALSE
-"New Orleans, Louisiana",New Orleans,,2023,FALSE,,FALSE,FALSE
-"Columbus, Ohio",Columbus,,2023,FALSE,,FALSE,FALSE
-"Tampa, Florida",Tampa,,NA,TRUE,,TRUE,FALSE
-"San Diego, California",San Diego,,2024,FALSE,,FALSE,FALSE
-"New Orleans, Louisiana",New Orleans,,2024,TRUE,2,FALSE,FALSE
-"New York City, New York",New York City,,2024,TRUE,7,FALSE,FALSE
-"Lisbon, Portugal",Lisbon,,2024,FALSE,,FALSE,FALSE
-"Porto, Portugal",Porto,,2024,FALSE,,FALSE,FALSE
-"Naples, Italy",Naples,,2024,FALSE,,FALSE,TRUE
-"Catania, Italy",Catania,,2024,FALSE,,FALSE,TRUE
-"Palermo, Italy",Palermo,,2024,FALSE,,FALSE,TRUE
-"The Finger Lakes, New York",The Finger Lakes,,2024,FALSE,,FALSE,TRUE
+"Quito, Ecuador",Quito,,2005,Yes,5,Yes,No
+"Pittsburgh, Pennsylvania",Pittsburgh,,2016,Yes,,Yes,No
+"Frederick, Maryland",Frederick,,2017,Yes,,Yes,No
+"Manuel Antonio, Costa Rica",Manuel Antonio,,2020,No,,No,No
+"Valladolid, Mexico",Valladolid,,2020,Yes,2,No,No
+"Cancun, Mexico",Cancun,,2020,Yes,2,No,No
+"Detroit, Michigan",Detroit,,2020,Yes,8,No,No
+"DC, Washington",DC,,2020,Yes,4,No,No
+"Picton, Ontario",Picton,,2021,No,,No,No
+"San Francisco, California",San Francisco,,2021,Yes,2,No,No
+"New York City, New York",New York City,,2021,Yes,6,No,No
+"Cozumel, Mexico",Cozumel,,2021,Yes,2,No,No
+"Greenville, South Carolina",Greenville,,2021,Yes,2,No,No
+"Aguadilla, Puerto Rico",Aguadilla,,2022,No,,No,No
+"Florence, Italy",Florence,,2022,No,,No,No
+"Rome, Italy",Rome,,2022,No,,No,No
+"Tivoli, Italy",Tivoli,,2022,No,,No,No
+"Paris, France",Paris,,2022,No,,No,No
+"Amsterdam, Netherlands",Amsterdam,,2022,No,,No,No
+"Venice, Italy",Venice,,2022,No,,No,No
+"Denver, Colorado",Denver,,2022,No,,No,No
+"Rocky Mountain National Park, Colorado",Rocky Mountain National Park,,2022,No,,No,No
+"Richmond, Virginia",Richmond,,2023,No,,No,No
+"Miami, Florida",Miami,,2023,No,,No,No
+"Las Vegas, Nevada",Las Vegas,,2023,Yes,2,No,No
+"Zion National Park, Utah",Zion National Park,,2023,No,,No,No
+"Hurricane, Utah",Hurricane,,2023,No,,No,No
+"Dubrovnik, Croatia",Dubrovnik,,2023,No,,No,No
+"Neum, Bosnia",Neum,,2023,No,,No,No
+"Brussels, Belgium",Brussels,,2023,No,,No,No
+"Seattle, Washington",Seattle,,2023,No,,No,No
+"Yosemetie National Park, Colorado",Yosemetie National Park,,2023,No,,No,No
+"Munich, Germany",Munich,,2023,No,,No,No
+"Vienna, Austria",Vienna,,2023,No,,No,No
+"Santa Cruz Island, Ecuador",Santa Cruz Island,,2023,No,,No,No
+"New Orleans, Louisiana",New Orleans,,2023,No,,No,No
+"Columbus, Ohio",Columbus,,2023,No,,No,No
+"Tampa, Florida",Tampa,,NA,Yes,,Yes,No
+"San Diego, California",San Diego,,2024,No,,No,No
+"New Orleans, Louisiana",New Orleans,,2024,Yes,2,No,No
+"New York City, New York",New York City,,2024,Yes,7,No,No
+"Lisbon, Portugal",Lisbon,,2024,No,,No,No
+"Porto, Portugal",Porto,,2024,No,,No,No
+"Naples, Italy",Naples,,2024,No,,No,Yes
+"Catania, Italy",Catania,,2024,No,,No,Yes
+"Palermo, Italy",Palermo,,2024,No,,No,Yes
+"The Finger Lakes, New York",The Finger Lakes,,2024,No,,No,Yes

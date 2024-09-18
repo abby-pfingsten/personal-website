@@ -34,10 +34,10 @@ populate_picker_input <- function(session,
     choices <- unique(years)
     selected <- choices
   } else if (ui_id %in% "home") {
-    choices <- c("TRUE", "FALSE")
-    selected <- "FALSE"
+    choices <- c("Yes", "No")
+    selected <- "No"
   } else if (ui_id %in% "multiple") {
-    choices <- c("TRUE", "FALSE")
+    choices <- c("Yes", "No")
     selected <- choices
   } else if (ui_id %in% "future") {
     choices <- c("TRUE", "FALSE")

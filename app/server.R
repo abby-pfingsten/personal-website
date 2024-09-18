@@ -27,7 +27,6 @@ server <- function(session, input, output) {
   populate_picker_input(session, "year", cities_visited)
   populate_picker_input(session, "home", cities_visited)
   populate_picker_input(session, "multiple", cities_visited)
-  populate_picker_input(session, "future", cities_visited)
 
 
 
@@ -35,16 +34,14 @@ server <- function(session, input, output) {
     list(
       input$year,
       input$home,
-      input$multiple,
-      input$future
+      input$multiple
     ),
     {
       cities_visited <- geocoded_cities %>%
         filter(
           year %in% input$year,
           home %in% input$home,
-          multiple %in% input$multiple,
-          city_for_this_year %in% input$future
+          multiple %in% input$multiple
         )
 
       ## Map Output ----
@@ -188,8 +185,12 @@ server <- function(session, input, output) {
     DT::datatable(
       books_read[, ..book_dt_col_index],
       rownames = FALSE,
+      escape = FALSE,
       colnames = book_dt_colnames,
+      extensions = "Scroller",
       options = list(
+        scrollY = 200,
+        scroller = TRUE,
         dom = "ft"
       )
     )
