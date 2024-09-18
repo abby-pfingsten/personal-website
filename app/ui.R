@@ -10,7 +10,7 @@ library(leaflet)
 
 ui <- dashboardPage(
   dashboardHeader(
-    title = "Abigale Pfingsten"
+    title = "Abigale Pfsdfingsten"
   ),
   dashboardSidebar(
     sidebarMenu(
