@@ -180,7 +180,7 @@ server <- function(session, input, output) {
   )
 
   books_read <- books_read[
-    order(books_read$year)
+    order(books_read$year, decreasing = TRUE)
   ]
 
   ## Render DT ----
@@ -190,7 +190,7 @@ server <- function(session, input, output) {
       rownames = FALSE,
       colnames = book_dt_colnames,
       options = list(
-        dom = "ftp"
+        dom = "ft"
       )
     )
   })
