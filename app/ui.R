@@ -413,11 +413,9 @@ ui <- dashboardPage(
             )
           ),
           h2("Just for Fun", style = "text-align:center;"),
-          h4("I know it can be hard to get to know a candidate just based off a resume,
+          p("I know it can be hard to get to know a candidate just based off a resume,
            cover letter or even a website. So hopefully this tab allows you to get a
-           better idea of who I am!",
-            style = "text-align: center; padding-right: 280px; padding-left: 280px"
-          ),
+           better idea of who I am!", style = "text-align:center"),
           br(),
           ## Wedding ----
           fluidRow(
