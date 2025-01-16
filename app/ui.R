@@ -66,7 +66,7 @@ ui <- dashboardPage(
               br(),
               tags$p("R Shiny developer with experience in designing robust architectures and 
                             crafting efficient server-side and UI/UX components for dynamic applications. I am currently
-                            working as Business Analytics Consultant at PNC Bank. Driven by my passion for
+                            working as an Application Developer at PNC Bank. Driven by my passion for
                             continuous growth, I have a strong interest to broaden my horizons in 
                             full-stack web development and would like to expand my skillset to include
                             React and/or Angular."),
@@ -107,7 +107,7 @@ ui <- dashboardPage(
               ),
               column(
                 width = 10,
-                h3("PNC Bank | Business Analytics Consultant | 2020 - Present"),
+                h3("PNC Bank | Application Developer | 2020 - Present"),
                 tags$hr(style = "border-top: 4px solid #ccc;"),
                 tags$p("PNC Bank is a financial institution and one of the largest banks in the country, 
                 offering a wide range of banking services to individuals, businesses, and organizations."),
