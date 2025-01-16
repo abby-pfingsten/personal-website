@@ -21,16 +21,16 @@ ui <- dashboardPage(
         }
       ")),
       menuItem("Work Experience",
-        tabName = "work",
-        icon = icon("desktop", lib = "font-awesome")
+               tabName = "work",
+               icon = icon("desktop", lib = "font-awesome")
       ),
       menuItem("Education",
-        tabName = "education",
-        icon = icon("graduation-cap", lib = "font-awesome")
+               tabName = "education",
+               icon = icon("graduation-cap", lib = "font-awesome")
       ),
       menuItem("For Fun!",
-        tabName = "fun",
-        icon = icon("smile", lib = "font-awesome")
+               tabName = "fun",
+               icon = icon("smile", lib = "font-awesome")
       )
     )
   ),
@@ -41,17 +41,17 @@ ui <- dashboardPage(
     tags$head(
       tags$link(rel = "icon", type = "image/png", href = "favicon.png")
     ),
-
+    
     # Home ----
     tabItems(
       tabItem(
         tabName = "home",
         fluidPage(
           h2("Abigale Pfingsten",
-            style = "text-align: center; font-size: 50px; font-family: Futura Heavy;"
+             style = "text-align: center; font-size: 50px; font-family: Futura Heavy;"
           ),
           h4("R Shiny Developer · Data Analyst · Analytical Consultant",
-            style = "text-align: center; font-size: 20px; font-family: Futura Heavy;"
+             style = "text-align: center; font-size: 20px; font-family: Futura Heavy;"
           ),
           fluidRow(
             br(),
@@ -69,21 +69,33 @@ ui <- dashboardPage(
                             working as an Application Developer at PNC Bank. Driven by my passion for
                             continuous growth, I have a strong interest to broaden my horizons in
                             full-stack web development and would like to expand my skillset to include
-                            React and/or Angular."),
+                            React and/or Angular. I'm currently in the process of building my own wedding website 
+                            using Material UI in React and it will utilize MongoDB, Node.js and Express for the backend.
+                            Additionally, I am in the process of re-creating this website using React."),
               tags$hr(style = "border-top: 2px solid #ccc;"),
               tags$p("Outside of work, I enjoy practicing the piano (I've been playing for 17 years),
                                 theater, cooking fun dishes, hiking, rock climbing, and traveling the world."),
               tags$hr(style = "border-top: 2px solid #ccc;"),
-              tags$a(
-                href = "https://www.linkedin.com/in/abigalepfingsten/",
-                target = "_blank",
-                style = "font-size: 60px; margin-left: 100px",
-                icon("linkedin", lib = "font-awesome"),
+              div(class = "icons", style = "display:flex; flex-direction:row; justify-content:space-between;",
+                
+                
+                tags$a(
+                  href = "https://www.linkedin.com/in/abigalepfingsten/",
+                  target = "_blank",
+                  style = "font-size: 60px; color: #8e7cc3;",
+                  icon("linkedin", lib = "font-awesome")
+                ),
                 tags$a(
                   href = "abigale-pfingsten-resume.pdf",
                   target = "_blank",
-                  style = "font-size: 50px; margin-left: 150px;",
+                  style = "font-size: 50px; color: #8e7cc3;",
                   icon("user", lib = "font-awesome")
+                ),
+                tags$a(
+                  href = "https://github.com/abby-pfingsten/",
+                  target = "_blank",
+                  style = "font-size: 50px; color: #8e7cc3;",
+                  icon("github", lib = "font-awesome")
                 )
               )
             )
@@ -95,7 +107,7 @@ ui <- dashboardPage(
         tabName = "work",
         fluidPage(
           h1("Work and Research Experience",
-            style = "text-align: center;"
+             style = "text-align: center;"
           ),
           br(),
           fluidPage(
@@ -132,7 +144,7 @@ ui <- dashboardPage(
                      the application seamlessly integrates multiple views, each offering unique features while
                      maintaining a cohesive user experience. Additionally, a feedback component is strategically
                      embedded to capture valuable insights from users, further enhancing the customer recommendation model.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                   height = "20%"
@@ -146,7 +158,7 @@ ui <- dashboardPage(
                      The application seamlessly transitioned from a Tableau workbook into a modularized Shiny app,
                      harnessing the power of plotly and data.table to deliver interactive visualizations and efficient
                      data processing.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                 ),
@@ -161,7 +173,7 @@ ui <- dashboardPage(
                      a dedicated email button was implemented, enabling seamless correspondence with the complaint creators for requesting further
                      information when needed. This application streamlines complaint management, optimizing efficiency and enhancing the
                      overall user experience.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                 ),
@@ -174,7 +186,7 @@ ui <- dashboardPage(
                      exceptional results within a demanding timeframe. By successfully executing this pivotal project,
                      I contributed to the seamless integration of BBVA clients into the PNC ecosystem, fostering a smooth and
                      positive experience throughout the transition process.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                 )
@@ -207,7 +219,7 @@ ui <- dashboardPage(
                      management team, and to allow for enhanced reporting of the project implementation.
                      I singlehandedly created this app as an intern, and it is still actively being used
                      and developed on.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                 ),
@@ -219,7 +231,7 @@ ui <- dashboardPage(
                      such a case. Some of my responsibilities included gathering the data via SQL, and
                      creating an app to display the results of our findings. We presented this to a leadership team
                      at the end of the summer.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                 )
@@ -273,7 +285,7 @@ ui <- dashboardPage(
                      influx of data coming in as quickly as by the hour, and we were tasked with efficiently analyzing
                      it and providing the results back to leadership in a timely fashion. I did most of my analysis
                      in R, but also utilized PowerBI for visualizations when presenting my findings to the leadership.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                 ),
@@ -284,7 +296,7 @@ ui <- dashboardPage(
                      how the leadership was feeling about the policies and procedures that had been implemented
                      in the past year, as well as existing practices. We also were interested in comparing how the
                      responses differed to the year prior.",
-                    style = "color: #8e7cc3"
+                     style = "color: #8e7cc3"
                   ),
                   width = "100%",
                 )
