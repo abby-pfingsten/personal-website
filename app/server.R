@@ -10,19 +10,17 @@ library(readxl)
 
 # Define server logic
 server <- function(session, input, output) {
-
-
   # Map Setup ----
 
-  # grab the geocoded cities from `tidygeocoder` so 
+  # grab the geocoded cities from `tidygeocoder` so
   # as to prevent lag
   geocoded_cities <- read_excel("geocoded_cities.xlsx")
-  
+
   # use the code below if new cities are added
   # geocoded_cities <- cities_visited %>%
   #   geocode(city, method = "osm", full_results = TRUE)
-  
- 
+
+
   ## Filters ----
   populate_picker_input(session, "year", cities_visited)
   populate_picker_input(session, "home", cities_visited)
@@ -45,7 +43,7 @@ server <- function(session, input, output) {
         )
 
       ## Map Output ----
-      
+
       output$map <- renderLeaflet({
         leaflet(cities_visited) %>%
           addTiles() %>% # Use OpenStreetMap tiles
@@ -195,13 +193,13 @@ server <- function(session, input, output) {
       )
     )
   })
-  
-  
+
+
   # Piano ----
   output$piano_vid_1 <- renderUI({
     url <- parse_url("https://www.youtube.com/watch?v=hS9OaIT6HMY")
     video_id <- url$query$v
-    
+
     tags$iframe(
       src = paste0("https://www.youtube.com/embed/", video_id),
       width = "500",
@@ -210,11 +208,11 @@ server <- function(session, input, output) {
       allowfullscreen = "allowfullscreen"
     )
   })
-  
+
   output$piano_vid_2 <- renderUI({
     url <- parse_url("https://www.youtube.com/watch?v=yTzgC6WTVIE&t=20s")
     video_id <- url$query$v
-    
+
     tags$iframe(
       src = paste0("https://www.youtube.com/embed/", video_id),
       width = "500",

@@ -30,7 +30,7 @@ populate_picker_input <- function(session,
                                   ui_id,
                                   data) {
   if (ui_id %in% "year") {
-    years <- sort(ifelse(is.na(data[, year]), "NA", data[,year]))
+    years <- sort(ifelse(is.na(data[, year]), "NA", data[, year]))
     choices <- unique(years)
     selected <- choices
   } else if (ui_id %in% "home") {

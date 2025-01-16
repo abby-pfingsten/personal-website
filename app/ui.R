@@ -41,7 +41,7 @@ ui <- dashboardPage(
     tags$head(
       tags$link(rel = "icon", type = "image/png", href = "favicon.png")
     ),
-    
+
     # Home ----
     tabItems(
       tabItem(
@@ -64,10 +64,10 @@ ui <- dashboardPage(
             column(
               width = 5,
               br(),
-              tags$p("R Shiny developer with experience in designing robust architectures and 
+              tags$p("R Shiny developer with experience in designing robust architectures and
                             crafting efficient server-side and UI/UX components for dynamic applications. I am currently
                             working as an Application Developer at PNC Bank. Driven by my passion for
-                            continuous growth, I have a strong interest to broaden my horizons in 
+                            continuous growth, I have a strong interest to broaden my horizons in
                             full-stack web development and would like to expand my skillset to include
                             React and/or Angular."),
               tags$hr(style = "border-top: 2px solid #ccc;"),
@@ -109,15 +109,15 @@ ui <- dashboardPage(
                 width = 10,
                 h3("PNC Bank | Application Developer | 2020 - Present"),
                 tags$hr(style = "border-top: 4px solid #ccc;"),
-                tags$p("PNC Bank is a financial institution and one of the largest banks in the country, 
+                tags$p("PNC Bank is a financial institution and one of the largest banks in the country,
                 offering a wide range of banking services to individuals, businesses, and organizations."),
-                tags$p("In my current position at PNC, I serve as a skilled R Shiny developer, 
-                       contributing to the success of various projects. I have taken the lead in developing 
-                       five distinct applications, showcasing my ability to drive impactful solutions. 
-                       Furthermore, I am responsible for crafting and maintaining dynamic Tabealu dashboards, 
-                       performing ad-hoc SQL queries, and conducting comprehensive data analysis. 
-                       Excitingly, I am also in the process of joining our API development team, 
-                       eager to enhance our utilization of APIs in our applications and provide 
+                tags$p("In my current position at PNC, I serve as a skilled R Shiny developer,
+                       contributing to the success of various projects. I have taken the lead in developing
+                       five distinct applications, showcasing my ability to drive impactful solutions.
+                       Furthermore, I am responsible for crafting and maintaining dynamic Tabealu dashboards,
+                       performing ad-hoc SQL queries, and conducting comprehensive data analysis.
+                       Excitingly, I am also in the process of joining our API development team,
+                       eager to enhance our utilization of APIs in our applications and provide
                        debugging support whenever needed."),
                 tags$p(
                   "Here are a few projects I worked on while at PNC:"
@@ -126,26 +126,28 @@ ui <- dashboardPage(
                 box(
                   h5("R Shiny Application"),
                   h6("Built the architecture, logic flow and sophisticated UI/UX to an application
-                     that allows managers to assign advisors to work customers, and track the 
+                     that allows managers to assign advisors to work customers, and track the
                      relationship. The application also has the ability to allow advisors to add peers and create
-                     a 'team' to work the prospect. With distinct functionalities tailored to managers and advisors, 
-                     the application seamlessly integrates multiple views, each offering unique features while 
-                     maintaining a cohesive user experience. Additionally, a feedback component is strategically 
+                     a 'team' to work the prospect. With distinct functionalities tailored to managers and advisors,
+                     the application seamlessly integrates multiple views, each offering unique features while
+                     maintaining a cohesive user experience. Additionally, a feedback component is strategically
                      embedded to capture valuable insights from users, further enhancing the customer recommendation model.",
-                     style = "color: #8e7cc3"),
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                   height = "20%"
                 ),
                 ### Sherlock ----
                 box(
                   h5("R Shiny Application"),
-                  h6("Developed an application featuring a Netflix-inspired recommender system, catering to bankers 
-                     operating in comparable markets or with similar portfolios. This innovative tool empowers them 
-                     with valuable insights, showcasing a curated selection of potential offerings to customers. 
-                     The application seamlessly transitioned from a Tableau workbook into a modularized Shiny app, 
-                     harnessing the power of plotly and data.table to deliver interactive visualizations and efficient 
-                     data processing.", 
-                     style = "color: #8e7cc3"),
+                  h6("Developed an application featuring a Netflix-inspired recommender system, catering to bankers
+                     operating in comparable markets or with similar portfolios. This innovative tool empowers them
+                     with valuable insights, showcasing a curated selection of potential offerings to customers.
+                     The application seamlessly transitioned from a Tableau workbook into a modularized Shiny app,
+                     harnessing the power of plotly and data.table to deliver interactive visualizations and efficient
+                     data processing.",
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                 ),
                 ### DNA Complaint ----
@@ -153,13 +155,14 @@ ui <- dashboardPage(
                   h5("R Shiny Application"),
                   h6("Created a data.table application that allows the user to view potential complaints sent in
                      through our system. A key feature of this request was to embed a button to randomly sample 5% of
-                     the population, to mark records to have the user throughouly check. Another request was to have 
+                     the population, to mark records to have the user throughouly check. Another request was to have
                      a button to check across all descriptions of the potential complaints, to see if it contains any of
-                     seven trigger words that would indicate dissatisfaction. To enhance communication and streamline the resolution process, 
-                     a dedicated email button was implemented, enabling seamless correspondence with the complaint creators for requesting further 
-                     information when needed. This application streamlines complaint management, optimizing efficiency and enhancing the 
+                     seven trigger words that would indicate dissatisfaction. To enhance communication and streamline the resolution process,
+                     a dedicated email button was implemented, enabling seamless correspondence with the complaint creators for requesting further
+                     information when needed. This application streamlines complaint management, optimizing efficiency and enhancing the
                      overall user experience.",
-                    style = "color: #8e7cc3"),
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                 ),
                 ### BBVA ----
@@ -167,11 +170,12 @@ ui <- dashboardPage(
                   h5("Tableau Dashboard"),
                   h6("During PNC's aquisition of BBVA, I was tasked with a high priority project, to create a dashboard that gave us insight
                      on the transition process of BBVA clients over to PNC. The creation of the query, gathering of data and design/flow of the dashboard all had to happen a very short
-                     period of time. This intensive undertaking showcased my ability to thrive under pressure while delivering 
-                     exceptional results within a demanding timeframe. By successfully executing this pivotal project, 
+                     period of time. This intensive undertaking showcased my ability to thrive under pressure while delivering
+                     exceptional results within a demanding timeframe. By successfully executing this pivotal project,
                      I contributed to the seamless integration of BBVA clients into the PNC ecosystem, fostering a smooth and
                      positive experience throughout the transition process.",
-                     style = "color: #8e7cc3"),
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                 )
               )
@@ -186,10 +190,10 @@ ui <- dashboardPage(
                 width = 10,
                 h3("PNC Bank | Data Analytics Intern | 2019"),
                 tags$hr(style = "border-top: 4px solid #ccc;"),
-                tags$p("During my time as an intern, I learned how to develop Shiny apps that can 
-                     read data from a multitude of big data sources, and write data back to 
-                     an external database. I also learned the importance of SQL in how it serves to 
-                     capture data from multiple complex sources, to isolate the data to just the information 
+                tags$p("During my time as an intern, I learned how to develop Shiny apps that can
+                     read data from a multitude of big data sources, and write data back to
+                     an external database. I also learned the importance of SQL in how it serves to
+                     capture data from multiple complex sources, to isolate the data to just the information
                      you need to do analysis on. Additionally, I learned a new skill and was able to develop
                      a handful of Tableau workbooks for a diverse range of business needs."),
                 tags$p(
@@ -200,21 +204,23 @@ ui <- dashboardPage(
                   h6("Built an application that allows the user to view opportunities that they
                      are tied to, and gives them the ability to request certain resources. It was designed
                      to facilitate a smooth transition between the sales organization and the project
-                     management team, and to allow for enhanced reporting of the project implementation. 
-                     I singlehandedly created this app as an intern, and it is still actively being used 
+                     management team, and to allow for enhanced reporting of the project implementation.
+                     I singlehandedly created this app as an intern, and it is still actively being used
                      and developed on.",
-                     style = "color: #8e7cc3"),
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                 ),
                 box(
                   h5("Capstone Project"),
                   h6("During the last few weeks of our internship, myself and the three other data analyst
-                     interns were tasked with making a capstone. We decided to try and find an answer to 
+                     interns were tasked with making a capstone. We decided to try and find an answer to
                      as to when a customer might churn, and what preventative measures could be taken in
-                     such a case. Some of my responsibilities included gathering the data via SQL, and 
+                     such a case. Some of my responsibilities included gathering the data via SQL, and
                      creating an app to display the results of our findings. We presented this to a leadership team
                      at the end of the summer.",
-                     style = "color: #8e7cc3"),
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                 )
               )
@@ -230,9 +236,9 @@ ui <- dashboardPage(
                 h3("Carnegie Mellon University | Research Assistant | 2018 - 2019"),
                 tags$hr(style = "border-top: 4px solid #ccc;"),
                 tags$p("During my junior and senior year, I participated in research with a professor
-                       in the International Relations department. The goal of the research was to try 
+                       in the International Relations department. The goal of the research was to try
                        and understand how 'covert action', and other like terms have been discussed
-                       throughout history. I was responsible for taking journals over various years 
+                       throughout history. I was responsible for taking journals over various years
                        and converting them from a .pdf to a .txt format via an algorithm I created. Following this,
                        I created a corpus to analyze the texts and was in the procress of developing
                        interactive graphs to visualize how the sentiments of these key words had changed
@@ -251,8 +257,8 @@ ui <- dashboardPage(
                 width = 10,
                 h3("Department of Health and Human Services | Program Assistant | 2018"),
                 tags$hr(style = "border-top: 4px solid #ccc;"),
-                tags$p("The Department of Health and Human Services (HHS) 
-                       is a U.S. government agency responsible for promoting and 
+                tags$p("The Department of Health and Human Services (HHS)
+                       is a U.S. government agency responsible for promoting and
                        protecting the health and well-being of Americans."),
                 tags$p("I gained many valuable skills during my first internship, and was due to my
                        excellent deliverables, was asked to join a group working on a high priority
@@ -267,17 +273,19 @@ ui <- dashboardPage(
                      influx of data coming in as quickly as by the hour, and we were tasked with efficiently analyzing
                      it and providing the results back to leadership in a timely fashion. I did most of my analysis
                      in R, but also utilized PowerBI for visualizations when presenting my findings to the leadership.",
-                     style = "color: #8e7cc3"),
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                 ),
                 box(
                   h5("Data Analytics - R"),
-                  h6("I was tasked with analyzing the results of a survey given at an annual meeting 
+                  h6("I was tasked with analyzing the results of a survey given at an annual meeting
                      with leadership across the organization. The goal of the analysis was to understand
-                     how the leadership was feeling about the policies and procedures that had been implemented 
+                     how the leadership was feeling about the policies and procedures that had been implemented
                      in the past year, as well as existing practices. We also were interested in comparing how the
                      responses differed to the year prior.",
-                     style = "color: #8e7cc3"),
+                    style = "color: #8e7cc3"
+                  ),
                   width = "100%",
                 )
               )
@@ -295,42 +303,42 @@ ui <- dashboardPage(
             column(
               2,
               tags$img(src = "open-classrooms.png", width = "150px")
-              ),
-              column(
-                10,
-                h3("OpenClassrooms - Web Development Certification | Aug 2023 - June 2024"),
-                tags$hr(style = "border-top: 4px solid #ccc;"),
-                tags$p("In the fall of 2023, I began a Web Development Certification through OpenClassrooms - it
+            ),
+            column(
+              10,
+              h3("OpenClassrooms - Web Development Certification | Aug 2023 - June 2024"),
+              tags$hr(style = "border-top: 4px solid #ccc;"),
+              tags$p("In the fall of 2023, I began a Web Development Certification through OpenClassrooms - it
                        was a project based certification, wherein after each set of courses, you built an application
-                       adhering to the requirements or themes of the module. I learned about HTML, CSS/SCSS, 
-                       making applications mobile and tablet compatible, SEO practices, Javascript, building 
+                       adhering to the requirements or themes of the module. I learned about HTML, CSS/SCSS,
+                       making applications mobile and tablet compatible, SEO practices, Javascript, building
                        and testing API's, Node.js, and for the final project, built a full-stack React application."),
-                tags$p("Please feel free to checkout my GitHub for some of the projects I completed during the course:"),
-                div(
-                  class = "disclaimers",
+              tags$p("Please feel free to checkout my GitHub for some of the projects I completed during the course:"),
+              div(
+                class = "disclaimers",
                 tags$a("Groupomania Full Stack React App", href = "https://github.com/abby-pfingsten/groupomania-react-app"),
                 tags$p("A message board app that allows you to create an account, sign in, make a multi-media post (accepts images,
                        audio or video), and view all posts made by other users."),
-                tags$p("This app can only be cloned and ran if you have a MySQL server account as it relies on two backend tables 
+                tags$p("This app can only be cloned and ran if you have a MySQL server account as it relies on two backend tables
                        for capturing user information.")
-                ),
-                div(
-                  class = "disclaimers",
-                  tags$a("Piquantee App", href = "https://github.com/abby-pfingsten/piiquante-app"),
-                  tags$p("An app that allows you to create an account, and add different hot sauces. You can view other users
+              ),
+              div(
+                class = "disclaimers",
+                tags$a("Piquantee App", href = "https://github.com/abby-pfingsten/piiquante-app"),
+                tags$p("An app that allows you to create an account, and add different hot sauces. You can view other users
                          hot sauces, and rate them. You can also delete a hot sauce that you have uploaded. All of these functionalities
                          are accomplished via API's that I built."),
-                  tags$p("Only the backend code was written by me (i.e. only files in the backend/ folder).")
-                ),
-                div(
-                  class = "disclaimers",
-                  tags$a("E-Commerce App", href = "https://github.com/abby-pfingsten/kanap-ecommerce-app"),
-                  tags$p("An  app that queries an API for items, and allows you to have a 'shopping experience' (i.e. you can 
+                tags$p("Only the backend code was written by me (i.e. only files in the backend/ folder).")
+              ),
+              div(
+                class = "disclaimers",
+                tags$a("E-Commerce App", href = "https://github.com/abby-pfingsten/kanap-ecommerce-app"),
+                tags$p("An  app that queries an API for items, and allows you to have a 'shopping experience' (i.e. you can
                          add, delete, modify items in your cart and 'checkout')."),
-                  tags$p("Only the backend code was written by me (i.e. only files in the backend/ folder).")
-                ),
-                br(),
-                br()
+                tags$p("Only the backend code was written by me (i.e. only files in the backend/ folder).")
+              ),
+              br(),
+              br()
             )
           ),
           fluidRow(
@@ -414,23 +422,28 @@ ui <- dashboardPage(
           ## Wedding ----
           fluidRow(
             column(
-              12, 
+              12,
               h3("Wedding Website"),
               tags$hr(style = "border-top: 4px solid #ccc;"),
-              
-              p("I recently got engaged and have been working on building my own wedding website using React! 
-                You can check it out", tags$a(href = "https://abby-and-andrew.netlify.app/",
-                                              style = "color:#8e7cc3; font-weight: bold; text-align: center",
-                                              target = "_blank",
-                                              "here",
-                                              style = "text-align: center"), 
-                ", and find the password to enter on my Github repo", 
-                tags$a(href = "https://github.com/abby-pfingsten/wedding",
-                       style = "color:#8e7cc3; font-weight: bold; text-align: center",
-                       target = "_blank",
-                       "here",
-                       style = "text-align: center"), 
-                ". I'm also actively working on turning this site into a React app that is mobile friendly (as my wedding app is).")
+              p(
+                "I recently got engaged and have been working on building my own wedding website using React!
+                You can check it out", tags$a(
+                  href = "https://abby-and-andrew.netlify.app/",
+                  style = "color:#8e7cc3; font-weight: bold; text-align: center",
+                  target = "_blank",
+                  "here",
+                  style = "text-align: center"
+                ),
+                ", and find the password to enter on my Github repo",
+                tags$a(
+                  href = "https://github.com/abby-pfingsten/wedding",
+                  style = "color:#8e7cc3; font-weight: bold; text-align: center",
+                  target = "_blank",
+                  "here",
+                  style = "text-align: center"
+                ),
+                ". I'm also actively working on turning this site into a React app that is mobile friendly (as my wedding app is)."
+              )
             )
           ),
           ## Travel ----
@@ -516,16 +529,18 @@ ui <- dashboardPage(
               12,
               tags$p(
                 "When applying to college, I wasn't sure what direction to go in, so for
-                a large majority of schools, I applied for music. Below are some audition 
+                a large majority of schools, I applied for music. Below are some audition
                 tapes I used, and therefore they are a few years old. Currently, I am working
-                on", tags$a(href = "https://www.youtube.com/watch?v=taY5oHleS4I",
-                            style = "color:#8e7cc3; font-weight: bold; text-align: center",
-                            target = "_blank",
-               "Chopin's Ballade No.1 in G minor, Op. 23.",
-                style = "text-align: center")
+                on", tags$a(
+                  href = "https://www.youtube.com/watch?v=taY5oHleS4I",
+                  style = "color:#8e7cc3; font-weight: bold; text-align: center",
+                  target = "_blank",
+                  "Chopin's Ballade No.1 in G minor, Op. 23.",
+                  style = "text-align: center"
+                )
               )
             )
-            ),
+          ),
           fluidPage(
             column(
               6,
