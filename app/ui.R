@@ -411,6 +411,28 @@ ui <- dashboardPage(
             style = "text-align: center; padding-right: 280px; padding-left: 280px"
           ),
           br(),
+          ## Wedding ----
+          fluidRow(
+            column(
+              12, 
+              h3("Wedding Website"),
+              tags$hr(style = "border-top: 4px solid #ccc;"),
+              
+              p("I recently got engaged and have been working on building my own wedding website using React! 
+                You can check it out", tags$a(href = "https://abby-and-andrew.netlify.app/",
+                                              style = "color:#8e7cc3; font-weight: bold; text-align: center",
+                                              target = "_blank",
+                                              "here",
+                                              style = "text-align: center"), 
+                ", and find the password to enter on my Github repo", 
+                tags$a(href = "https://github.com/abby-pfingsten/wedding",
+                       style = "color:#8e7cc3; font-weight: bold; text-align: center",
+                       target = "_blank",
+                       "here",
+                       style = "text-align: center"), 
+                ". I'm also actively working on turning this site into a React app that is mobile friendly (as my wedding app is).")
+            )
+          ),
           ## Travel ----
           fluidRow(
             column(
