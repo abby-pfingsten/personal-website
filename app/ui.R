@@ -50,7 +50,7 @@ ui <- dashboardPage(
           h2("Abigale Pfingsten",
              style = "text-align: center; font-size: 50px; font-family: Futura Heavy;"
           ),
-          h4("R Shiny Developer · Data Analyst · Analytical Consultant",
+          h4("Software Developer · R Shiny Consultant",
              style = "text-align: center; font-size: 20px; font-family: Futura Heavy;"
           ),
           fluidRow(
@@ -65,13 +65,12 @@ ui <- dashboardPage(
               width = 5,
               br(),
               # test
-              tags$p("R Shiny developer with experience in designing robust architectures and
-                            crafting efficient server-side and UI/UX components for dynamic applications. I am currently
-                            working as an Application Developer at PNC Bank. Driven by my passion for
+              tags$p("Software developer with experience in full-stack R Shiny app development, designing robust architectures and
+                            crafting efficient server-side and UI/UX components. Driven by my passion for
                             continuous growth, I have a strong interest to broaden my horizons in
-                            full-stack web development and would like to expand my skillset to include
-                            React and/or Angular. I'm currently in the process of building my own wedding website 
-                            using Material UI in React and it will utilize MongoDB, Node.js and Express for the backend.
+                            full-stack web development and would like to expand my role into React's framework.
+                            A personal project I am working on is building my own wedding website 
+                            using Material UI in React for the front-end, and utilizing MongoDB, Node.js and Express for the backend.
                             Additionally, I am in the process of re-creating this website using React."),
               tags$hr(style = "border-top: 2px solid #ccc;"),
               tags$p("Outside of work, I enjoy practicing the piano (I've been playing for 17 years),
@@ -120,31 +119,30 @@ ui <- dashboardPage(
               ),
               column(
                 width = 10,
-                h3("PNC Bank | Application Developer | 2020 - Present"),
+                h3("PNC Bank | Software Developer | 2020 - Present"),
                 tags$hr(style = "border-top: 4px solid #ccc;"),
                 tags$p("PNC Bank is a financial institution and one of the largest banks in the country,
                 offering a wide range of banking services to individuals, businesses, and organizations."),
-                tags$p("In my current position at PNC, I serve as a skilled R Shiny developer,
-                       contributing to the success of various projects. I have taken the lead in developing
-                       five distinct applications, showcasing my ability to drive impactful solutions.
-                       Furthermore, I am responsible for crafting and maintaining dynamic Tabealu dashboards,
-                       performing ad-hoc SQL queries, and conducting comprehensive data analysis.
-                       Excitingly, I am also in the process of joining our API development team,
-                       eager to enhance our utilization of APIs in our applications and provide
-                       debugging support whenever needed."),
+                tags$p("In my current position at PNC, I serve as a skilled R Shiny app developer,
+                       contributing to the success of various applications, each with their own 
+                       complex set of business requirements and logic, showcasing my ability
+                       to drive impactful solutions. In addition to building scalable, modular applications 
+                       with a strong focus on responsive, reusable interfaces, on the backend, I have architected 
+                       tables in Microsoft SQL Server to manage application data, as well as create connections 
+                       for my applications to Hadoop and other endpoints."),
                 tags$p(
                   "Here are a few projects I worked on while at PNC:"
                 ),
                 ### RCI ----
                 box(
                   h5("R Shiny Application"),
-                  h6("Built the architecture, logic flow and sophisticated UI/UX to an application
+                  h6('Built the architecture, logic flow and sophisticated UI/UX to an application
                      that allows managers to assign advisors to work customers, and track the
                      relationship. The application also has the ability to allow advisors to add peers and create
-                     a 'team' to work the prospect. With distinct functionalities tailored to managers and advisors,
+                     a "team" to work the prospect. With distinct functionalities tailored to managers and advisors,
                      the application seamlessly integrates multiple views, each offering unique features while
                      maintaining a cohesive user experience. Additionally, a feedback component is strategically
-                     embedded to capture valuable insights from users, further enhancing the customer recommendation model.",
+                     embedded to capture valuable insights from users, further enhancing the customer recommendation model.',
                      style = "color: #8e7cc3"
                   ),
                   width = "100%",
@@ -439,7 +437,7 @@ ui <- dashboardPage(
               p(
                 "I recently got engaged and have been working on building my own wedding website using React!
                 You can check it out", tags$a(
-                  href = "https://abby-and-andrew.netlify.app/",
+                  href = "https://abbyandrew.love/",
                   style = "color:#8e7cc3; font-weight: bold; text-align: center",
                   target = "_blank",
                   "here",
